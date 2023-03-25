@@ -4,43 +4,82 @@
 // 3 -> Среда
 // 5 -> Пятница
 
-Console.Write("Введите номер дня недели: ");
-int dayNum = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите номер дня недели: ");
+// int dayNum = Convert.ToInt32(Console.ReadLine());
 
-if (dayNum == 1)
+// if (dayNum == 1)
+// {
+//   Console.WriteLine($" {dayNum} является понедельником");
+// }
+// if (dayNum == 2)
+// {
+//   Console.WriteLine($" {dayNum} является вторником");
+// }
+// if (dayNum == 3)
+// {
+//   Console.WriteLine($" {dayNum} является средой");
+// }
+// if (dayNum == 4)
+// {
+//   Console.WriteLine($" {dayNum} является четвергом");
+// }
+// if (dayNum == 5)
+// {
+//   Console.WriteLine($" {dayNum} является пятницей");
+// }
+// if (dayNum == 6)
+// {
+//   Console.WriteLine($" {dayNum} является оубботой");
+// }
+// if (dayNum == 7)
+// {
+//   Console.WriteLine($" {dayNum} является воскресеньем");
+// }
+
+// if (dayNum > 7)
+// {
+//   Console.WriteLine($" {dayNum} не является днём недели.ВНИМАТЕЛЬНО!");
+// }
+// if (dayNum < 1)
+// {
+//   Console.WriteLine($" {dayNum} не является днём недели.ВНИМАТЕЛЬНО!");
+// }
+
+
+Console.WriteLine("Введите номер дня недели");
+string day = Console.ReadLine();
+
+if (day == "1")
 {
-  Console.WriteLine($" {dayNum} является понедельником");
+  Console.WriteLine("Это понедельник");
 }
-if (dayNum == 2)
+else if (day == "2")
 {
-  Console.WriteLine($" {dayNum} является вторником");
+  Console.WriteLine("Это вторник");
 }
-if (dayNum == 3)
+else if (day == "3")
 {
-  Console.WriteLine($" {dayNum} является средой");
+  Console.WriteLine("Это среда");
 }
-if (dayNum == 4)
+else if (day == "4")
 {
-  Console.WriteLine($" {dayNum} является четвергом");
+  Console.WriteLine("Это четверг");
 }
-if (dayNum == 5)
+else if (day == "5")
 {
-  Console.WriteLine($" {dayNum} является пятницей");
+  Console.WriteLine("Это пятница");
 }
-if (dayNum == 6)
+else if (day == "6")
 {
-  Console.WriteLine($" {dayNum} является оубботой");
+  Console.WriteLine("Это суббота");
 }
-if (dayNum == 7)
+else if (day == "7")
 {
-  Console.WriteLine($" {dayNum} является воскресеньем");
+  Console.WriteLine("Это воскресенье");
 }
 
-if (dayNum > 7)
+else
 {
-  Console.WriteLine($" {dayNum} не является днём недели.ВНИМАТЕЛЬНО!");
+  Console.WriteLine("Такого дня недели НЕ СУЩЕСТВУЕТ!!!");
 }
-if (dayNum < 1)
-{
-  Console.WriteLine($" {dayNum} не является днём недели.ВНИМАТЕЛЬНО!");
-}
+
