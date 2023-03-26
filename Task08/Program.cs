@@ -21,10 +21,12 @@ else if (number == count1)
 {
   Console.Write($"Это положительное число не имеет четного ряда!");
 }
-
-while (count <= number)
+else
 {
-  Console.Write($"{count} ");
-  count += 2;
+  while (count <= number)
+  {
+    Console.Write($"{count} ");
+    count += 2;
+  }
 }
 
