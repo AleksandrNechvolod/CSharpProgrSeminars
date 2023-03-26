@@ -8,17 +8,23 @@
 Console.WriteLine("Введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int count = 1;
+int count = 2;
+int count1 = 1;
 
- if (count > number)
+
+if (number < count1)
 {
   Console.Write($"Это не положительное число, введите положительное!");
   Console.WriteLine();
+}
+else if (number == count1)
+{
+  Console.Write($"Это положительное число не имеет четного ряда!");
 }
 
 while (count <= number)
 {
   Console.Write($"{count} ");
-  count++;
+  count += 2;
 }
 
