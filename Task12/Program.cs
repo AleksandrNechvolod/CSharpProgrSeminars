@@ -31,12 +31,13 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 /////////////////////////////////////////////////
 int ReminderDivision(int num1, int num2)
 {
-  int res = num1 % num2;
-  return res;
+  // int res = num1 % num2; 
+  // return res;
+  return num1 % num2; //Более быстрый способ записи тела метода.
 }
 
-int result = ReminderDivision(number1,number2);
-if (result==0) Console.WriteLine("Кратное");
+int result = ReminderDivision(number1, number2);
+if (result == 0) Console.WriteLine("Кратное");
 else Console.WriteLine($"Не кратное. Остаток от деления -> {result}");
 
 
