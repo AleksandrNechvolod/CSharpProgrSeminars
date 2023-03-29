@@ -27,7 +27,7 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 // }
 
 
-// Решение через метод
+// Решение 2 через метод
 /////////////////////////////////////////////////
 int ReminderDivision(int num1, int num2)
 {
