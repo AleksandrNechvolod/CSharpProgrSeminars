@@ -33,11 +33,15 @@ int ReminderDivision(int num1, int num2)
 {
   // int res = num1 % num2; 
   // return res;
-  return num1 % num2; //Более быстрый способ записи тела метода.
+  return num1 % num2; //Более быстрый способ записи тела мет
 }
 
 int result = ReminderDivision(number1, number2);
+////////////////////Вариант записи вывода метода через условного оператора
 if (result == 0) Console.WriteLine("Кратное");
 else Console.WriteLine($"Не кратное. Остаток от деления -> {result}");
+
+/////////////////// Вариант записи вывода метода через тернарного оператора
+Console.WriteLine(result == 0 ? "Кратное" : $"Не кратное. Остаток от деления -> {result}");
 
 
