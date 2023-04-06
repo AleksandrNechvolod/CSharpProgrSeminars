@@ -19,16 +19,16 @@ if (num2 <= 0)
   return;
 }
 
- int exponentiation = Exponentiation(num1, num2);
+int exponentiation = Exponentiation(num1, num2);
 
-Console.WriteLine($"Число {num1} в степени {num2} = {exponentiation}");   
+Console.WriteLine($"Число {num1} в степени {num2} = {exponentiation}");
 
 int Exponentiation(int number1, int number2)
 {
   int exponent = 1;
   for (int i = 0; i < number2; i++)
   {
-    exponent = exponent * number1;
+    exponent *= number1;
   }
   return exponent;
 }
