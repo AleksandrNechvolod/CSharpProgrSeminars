@@ -4,8 +4,7 @@
 // 3. Найдите сумму отрицательных и положительных элементов массива.
 
 //  Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма
-// положительных чисел равна 29, сумма отрицательных равна
-Console.Clear();
+// положительных чисел равна 29, сумма отрицательных равна-20
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
@@ -50,6 +49,7 @@ int SumPositiveElements(int[] arr)
   return sum;
 }
 
+Console.Clear();
 int[] array = CreateArrayRndInt(12, -9, 9);
 PrintArray(array);
 int sumNegativeElem = SumNegativeElements(array);
