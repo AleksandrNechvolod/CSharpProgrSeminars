@@ -40,7 +40,6 @@ int CountElements(int[] arr, int min, int max)
   {
     if (arr[i] >= min && arr[i] <= max)
     {
-
       count++;
     }
 
