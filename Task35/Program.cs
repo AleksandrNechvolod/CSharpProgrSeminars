@@ -42,7 +42,6 @@ int CountElements(int[] arr, int min, int max)
     {
       count++;
     }
-
   }
   return count;
 }
