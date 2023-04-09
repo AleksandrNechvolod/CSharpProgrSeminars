@@ -50,6 +50,6 @@ int CountElements(int[] arr, int min, int max)
 Console.Clear();
 int[] array = CreateArrayRndInt(123, -200, 200);
 PrintArray(array);
-int count = (CountElements(array, 10, 99));
-Console.WriteLine( );
+int count = CountElements(array, 10, 99);
+Console.WriteLine();
 Console.WriteLine($"Количество элементов в диапазоне 10-99 = {count}.");
