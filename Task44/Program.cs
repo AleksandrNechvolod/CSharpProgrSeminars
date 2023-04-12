@@ -33,5 +33,6 @@ void PrintArray(int[] arr)
 Console.Clear();
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-//  int[] fiboArray = FiboArray(number);
-PrintArray(FiboArray(number));
+if (number > 1) PrintArray(FiboArray(number));
+else Console.Write("Введите количество элементов не менее 2.");
+
