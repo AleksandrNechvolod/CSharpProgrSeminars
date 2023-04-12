@@ -34,5 +34,5 @@ Console.Clear();
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number > 1) PrintArray(FiboArray(number));
-else Console.Write("Введите количество элементов не менее 2.");
+else Console.Write("Для вычисления ряда чисел Фибоначчи ведите количество элементов не менее 2.");
 
