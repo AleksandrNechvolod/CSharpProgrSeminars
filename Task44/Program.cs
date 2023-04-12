@@ -10,7 +10,7 @@
 int[] FiboArray(int num)
 {
   int[] arr = new int[num];
-  arr[0] = 0;
+  // arr[0] = 0; можно не обозначать, т.к. при создании в массиве всегда нули.
   arr[1] = 1;
   for (int i = 2; i < num; i++)
   {
