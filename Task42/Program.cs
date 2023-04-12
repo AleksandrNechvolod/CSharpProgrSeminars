@@ -6,8 +6,12 @@
 // 3 -> 11
 // 2 -> 10
 
-string DecToBin(int decimalNumber)
+string DecToBinString(int decimalNumber) // Решение через строковый метод
 {
+  if (decimalNumber == 0 || decimalNumber == 1)
+  {
+    return Convert.ToString(decimalNumber);
+  }
   string dec = string.Empty;
   while (decimalNumber > 0)
   {
@@ -17,7 +21,26 @@ string DecToBin(int decimalNumber)
   return dec;
 }
 
+int DecToBinInt(int decimalNumber) // Решение через числовой метод
+{
+  if (decimalNumber == 0 || decimalNumber == 1)
+  {
+    return decimalNumber;
+  }
+  int dec = 0;
+  int i = 1;
+  while (decimalNumber > 0)
+  {
+    dec = dec + decimalNumber % 2 * i;
+    decimalNumber /= 2;
+    i *= 10;
+  }
+  return dec;
+}
+
 Console.Clear();
-int decimalNum = 2;
-string result = DecToBin(decimalNum);
+int decimalNum = 45;
+string result = DecToBinString(decimalNum); 
+int result1 = DecToBinInt(decimalNum);
 Console.WriteLine(result);
+Console.WriteLine(result1);
