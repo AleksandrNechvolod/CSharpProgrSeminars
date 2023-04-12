@@ -10,7 +10,7 @@ string DecToBinString(int decimalNumber) // Решение через строк
 {
   if (decimalNumber == 0 || decimalNumber == 1)
   {
-    return Convert.ToString(decimalNumber);
+    return decimalNumber.ToString();
   }
   string dec = string.Empty;
   while (decimalNumber > 0)
