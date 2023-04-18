@@ -18,6 +18,17 @@ int SumMainDiagonal(int[,] matrix)
   return sum;
 }
 
+/// Второе решение (метод немного изменён)
+// int SumMainDiagonal(int[,] matrix)
+// {
+//   int sum = 0;
+//   for (int i = 0; i < matrix.GetLength(0) && i < matrix.GetLength(1); i++)
+//   {
+//     sum += matrix[i, i];
+//   }
+//   return sum;
+// }
+
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {                          // 0       1
   int[,] matrix = new int[rows, columns];
@@ -46,7 +57,7 @@ void PrintMatrix(int[,] matrix)
 }
 
 Console.Clear();
-int[,] array2d = CreateMatrixRndInt(3, 5, 0, 10);
+int[,] array2d = CreateMatrixRndInt(4, 7, 0, 10);
 PrintMatrix(array2d);
 Console.WriteLine();
 int result = SumMainDiagonal(array2d);
