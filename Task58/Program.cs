@@ -39,11 +39,11 @@ void PrintMatrix(int[,] matrix)
   }
 }
 
-// Console.Clear();
-int[,] createMatrix1 = CreateMatrixRndInt(2, 3, 0, 10);
+Console.Clear();
+int[,] createMatrix1 = CreateMatrixRndInt(2, 2, 1, 10);
 PrintMatrix(createMatrix1);
 Console.WriteLine();
-int[,] createMatrix2 = CreateMatrixRndInt(3, 2, 0, 10);
+int[,] createMatrix2 = CreateMatrixRndInt(2, 2, 1, 10);
 PrintMatrix(createMatrix2);
 int[,] multMatrix = MatrixMultiplication(createMatrix1, createMatrix2);
 Console.WriteLine();
@@ -71,6 +71,5 @@ int[,] MatrixMultiplication(int[,] matrixA, int[,] matrixB)
         }
       }
     }
-
   return matrixC;
 }
